@@ -1,4 +1,4 @@
-remove all the code and keep only the instructions: This is a complex set of requirements that requires restructuring the authentication flow to stop "auto-creating" data and instead guide the user through a defined funnel.
+This is a complex set of requirements that requires restructuring the authentication flow to stop "auto-creating" data and instead guide the user through a defined funnel.
 
 Here is the general professional implementation plan and the necessary code changes for reference only.
 
@@ -775,7 +775,7 @@ TypeScript
      <SubscriptionPage />
   </ProtectedRoute>
 } />
-Summary of Fixes Applied
+Summary of Fixes that should be applied
 Blank Callback: The AuthCallback now uses a useRef to prevent double execution and explicitly handles Hash vs Search params.
 
 Forgot Password Blank: AuthContext now listens for the PASSWORD_RECOVERY event and AuthCallback detects the type=recovery hash to route correctly.
